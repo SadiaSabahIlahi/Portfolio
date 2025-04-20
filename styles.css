@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:#35424a;
+}
+
+header {
+    background: #030203;
+    color: #0a0000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: hsl(0, 23%, 97%);
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 img {
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: black;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #000000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    label.logo {
+      color: rgb(248, 241, 241);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      background-color: rgb(241, 238, 238);
+      border-radius: 50%;
+      display: block;
+    }
+
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(241, 233, 233);
+      transition: color 0.3s;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      color: #1b5cbd;
+    }
+
+    
+    @media (max-width: 1024px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+
+
+
+
+
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(221, 217, 217);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#home.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+    
+
+
+.learn-more {
+    text-decoration: none;
+    background-color: white;
+    color: #d8315b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more:hover {
+    color: black;
+}   
+
+
+
+div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 600px) {
+    div {
+        grid-template-columns: 1fr; 
+    }
+}
+
+#projects {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.project {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #a0d3eb;
+}
+.project h3 {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+.project:hover h3 {
+    color: #02162c;
+}
+@media (max-width: 768px) {
+    #projects {
+        padding: 15px;
+    }
+    .project {
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .project h3 {
+        font-size: 18px;
+    }
+    .project p {
+        font-size: 14px;
+    }
+}       
+
+#contact {
+    padding: 40px 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+input, textarea {
+    font-size: 14px;
+}
+button:hover {
+    background-color: white;
+}
+        
